@@ -1,0 +1,109 @@
+body { 
+        margin: 0; 
+        font-family: 'Segoe UI', sans-serif; 
+        background-image: linear-gradient(135deg,#2b5876,#4e4376);
+        color: #333; 
+    }
+    .sidebar h1{
+        color: rgb(14, 195, 211);
+    }
+    .container { 
+        display: flex; 
+        min-height: 100vh; 
+    }
+    .sidebar {
+        width: 220px;
+        background: #1e2a38; 
+        color: #fff; 
+        padding: 20px; 
+    }
+    .sidebar h2 { 
+    margin-bottom: 30px; 
+    }
+    .sidebar ul { 
+        list-style: none; 
+        padding: 0;
+    }
+
+    .sidebar ul li { 
+      color: white;
+        padding: 10px 0; 
+        cursor: pointer; 
+    }
+    .sidebar ul li.active, .sidebar ul li:hover { 
+        color: #87cefa; 
+        font-weight: bold; 
+    }
+    .main-content { 
+        flex: 1; 
+        padding: 20px; 
+    }
+    .dashboard-header h1 { 
+        margin-bottom: 20px; 
+    }
+    .cards { 
+        display: flex; 
+        gap: 20px; 
+        flex-wrap: wrap; 
+    }
+
+    .card { 
+        background: #d5daf0; 
+        border-radius: 10px; 
+        padding: 20px;
+        width: 180px; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        font-size: 18px;
+    }
+    .card p { 
+        margin: 10px 0 0; 
+    }
+    .card span { 
+        font-size: 14px; 
+        color: #333; 
+    }
+    .tables { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        margin-top: 30px; 
+    }
+    .table-container { 
+        flex: 1; 
+        min-width: 300px; 
+    }
+    .table-container.full { 
+        width: 100%; 
+        margin-top: 20px; 
+    }
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        background: #fff; 
+        border-radius: 10px; 
+        overflow: hidden; 
+    }
+    th, td { 
+        padding: 12px; 
+        text-align: left; 
+        border-bottom: 1px solid #eee; 
+    }
+    .badge { 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        font-size: 13px; 
+    }
+    .badge.green { 
+        background-color: #c6f6d5; 
+        color: #276749; 
+    }
+    .badge.yellow { 
+        background-color: #fefcbf; 
+        color: #744210; 
+    }
+    .dashboard-header h1{
+      color: white;
+    }
+    .table-container h3{
+      color: white;
+    }

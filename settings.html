@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QuickFix - Settings</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: linear-gradient(135deg,#2b5876,#4e4376);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #1e2a38;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h1 {
+      color: rgb(14, 195, 211);
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      color: white;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover,
+    .sidebar ul li.active {
+      color: #87cefa;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .dashboard-header h1 {
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .settings-section {
+      background-color: #d5daf0;
+      color: #1e2a38;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .settings-section h2 {
+      margin-top: 0;
+      color: #283593;
+    }
+
+    .settings-item {
+      margin: 10px 0;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .settings-item label {
+      flex: 1;
+    }
+
+    .settings-item input[type="checkbox"],
+    .settings-item select {
+      margin-left: 20px;
+    }
+
+    .settings-item input[type="text"],
+    .settings-item input[type="email"],
+    .settings-item input[type="password"] {
+      padding: 5px;
+      border-radius: 6px;
+      border: 1px solid #999;
+      width: 200px;
+    }
+
+    .save-btn {
+      margin-top: 10px;
+      background-color: #3f51b5;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .save-btn:hover {
+      background-color: #283593;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>QuickFix</h1>
+      <h2>Admin</h2>
+      <ul>
+        <a href="admin1.html"><li>Dashboard</li></a>
+        <a href="users.html"><li>Users</li></a>
+        <a href="servicesOfadmin.html"><li>Services</li></a>
+        <a href="settings.html"><li class="active">Settings</li></a>
+      </ul>
+    </div>
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Admin Settings</h1>
+      </header>
+
+      <div class="settings-section">
+        <h2><i class="fas fa-user-cog"></i> Profile Settings</h2>
+        <div class="settings-item">
+          <label>Email:</label>
+          <input type="email" value="admin@quickfix.com" />
+        </div>
+        <div class="settings-item">
+          <label>Username:</label>
+          <input type="text" value="admin123" />
+        </div>
+        <div class="settings-item">
+          <label>Change Password:</label>
+          <input type="password" placeholder="New Password" />
+        </div>
+        <button class="save-btn">Save Profile</button>
+      </div>
+
+      <div class="settings-section">
+        <h2><i class="fas fa-cogs"></i> System Preferences</h2>
+        <div class="settings-item">
+          <label>Theme:</label>
+          <select>
+            <option>Dark Mode</option>
+            <option>Light Mode</option>
+          </select>
+        </div>
+        <div class="settings-item">
+          <label>Default Language:</label>
+          <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Telugu</option>
+          </select>
+        </div>
+        <button class="save-btn">Save Preferences</button>
+      </div>
+
+      <div class="settings-section">
+        <h2><i class="fas fa-lock"></i> Security</h2>
+        <div class="settings-item">
+          <label>Two-Factor Authentication:</label>
+          <input type="checkbox" checked />
+        </div>
+        <div class="settings-item">
+          <label>Login Alerts:</label>
+          <input type="checkbox" />
+        </div>
+        <button class="save-btn">Save Security Settings</button>
+      </div>
+
+      <div class="settings-section">
+        <h2><i class="fas fa-bell"></i> Notification Preferences</h2>
+        <div class="settings-item">
+          <label>Email Notifications:</label>
+          <input type="checkbox" checked />
+        </div>
+        <div class="settings-item">
+          <label>SMS Alerts:</label>
+          <input type="checkbox" />
+        </div>
+        <div class="settings-item">
+          <label>Service Status Updates:</label>
+          <input type="checkbox" checked />
+        </div>
+        <button class="save-btn">Save Notification Settings</button>
+      </div>
+
+      <footer>
+        &copy; 2025 QuickFix Admin Panel
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QuickFix - Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: linear-gradient(135deg, #2b5876, #4e4376);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #1e2a38;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h1 {
+      color: rgb(14, 195, 211);
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover, .sidebar ul li.active {
+      color: #87cefa;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .dashboard-header h1 {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #d5daf0;
+      border-radius: 10px;
+      padding: 20px;
+      color: #1e2a38;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #3f51b5;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>QuickFix</h1>
+      <h2>Admin</h2>
+      <ul>
+        <a href="admin1.html"><li>Dashboard</li></a>
+        <a href="users.html"><li>Users</li></a>
+        <a href="servicesOfadmin.html"><li class="active">Services</li></a>
+        <a href="settings.html"><li>Settings</li></a>
+      </ul>
+    </div>
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Available Services</h1>
+      </header>
+
+      <div class="services-grid">
+        <div class="card">
+          <i class="fas fa-wrench"></i>
+          <h3>Plumbing</h3>
+          <p>Leak fixing, pipe installation, bathroom repairs.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-hammer"></i>
+          <h3>Carpentry</h3>
+          <p>Furniture work, doors, cabinets, repairs.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-bolt"></i>
+          <h3>Electrical</h3>
+          <p>Wiring, light fixtures, fan installation.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tv"></i>
+          <h3>TV Repair</h3>
+          <p>LED/LCD repair, mounting, screen issues.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-snowflake"></i>
+          <h3>AC Repair</h3>
+          <p>AC servicing, gas refill, cooling issues.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-person-digging"></i>
+          <h3>Construction</h3>
+          <p>House building, extensions, renovations.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-paint-roller"></i>
+          <h3>Painting</h3>
+          <p>Interior, exterior painting and coatings.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-broom"></i>
+          <h3>Cleaning</h3>
+          <p>Home, kitchen, deep cleaning & sanitization.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-car"></i>
+          <h3>Vehicle Service</h3>
+          <p>Car washing, polishing, pickup/drop service.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-couch"></i>
+          <h3>Sofa Repair</h3>
+          <p>Upholstery, spring replacement, foam fixing.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tree"></i>
+          <h3>Gardening</h3>
+          <p>Lawn mowing, tree trimming, landscape design.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-desktop"></i>
+          <h3>Computer Repair</h3>
+          <p>Hardware fixes, formatting, virus removal.</p>
+        </div>
+      </div>
+
+      <footer>
+        &copy; 2025 QuickFix Admin Panel
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

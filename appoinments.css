@@ -1,0 +1,113 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-image: linear-gradient(135deg,#2b5876,#4e4376);
+      color: white;
+      }
+    header {
+        background-image: linear-gradient(135deg,#2b5876,#4e4376);
+        padding: 10px 40px;
+        color: #fff;
+        display: flex;
+        box-shadow: 0px 0px 15px black;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px black;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+      nav a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #1d3557;
+      }
+
+      .card {
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        background-color: rgba(0,0,0,0.4);
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+
+      .card .info {
+        display: flex;
+        align-items: center;
+      }
+
+      .card .icon {
+        font-size: 40px;
+        margin-right: 1rem;
+      }
+
+      .card .text {
+        line-height: 1.4;
+      }
+
+      .card .text h3 {
+        margin: 0;
+        font-size: 20px;
+        color: white;
+      }
+
+      .card .text p {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+        color: white;
+      }
+
+      .status {
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+
+      .scheduled { 
+        background: #d9eaff; 
+        color: #2155cd; 
+      }
+      .inprogress { 
+        background: #fff3cd; 
+        color: #856404; 
+      }
+      .completed { 
+        background: #d4edda; 
+        color: #155724; 
+      }
+      .cancelled { 
+        background: #f8d7da; 
+        color: #721c24; 
+      }
+      .app{
+        color: white;
+      }
